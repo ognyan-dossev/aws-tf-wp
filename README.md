@@ -1,6 +1,7 @@
 # Wordpress deployment to AWS
 ### via Terraform and Ansible
 
+![# AWS](AWS.jpg)
 ## Prerequisites
 
 Before using this Makefile, ensure you have the following:

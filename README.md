@@ -6,6 +6,7 @@
 Before using this Makefile, ensure you have the following:
 
 - [Terraform](https://www.terraform.io/downloads.html) installed and available in your system's PATH.
+- [make](https://wiki.ubuntu.com/ubuntu-make) installed
 - Valid AWS credentials exported as environment variables:
   - `AWS_ACCESS_KEY_ID`: Your AWS access key.
   - `AWS_SECRET_ACCESS_KEY`: Your AWS secret access key.
@@ -26,6 +27,8 @@ db_pass # Wordpress database password
 wp_user # Wordpress administration console user
 wp_pass # Wordpress administration console password
 ```
+
+If you'd like to completely automate the deployment, copy terraform\terraform.tfvars.example to terraform\terraform.tfvars and edit the credentials.
 
 ## Destroy Terraform Resources
 To destroy the Terraform resources, run the following command:

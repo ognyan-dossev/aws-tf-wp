@@ -29,7 +29,7 @@ wp_user # Wordpress administration console user
 wp_pass # Wordpress administration console password
 ```
 
-If you'd like to completely automate the deployment, copy terraform\terraform.tfvars.example to terraform\terraform.tfvars and edit the credentials.
+If you'd like to completely automate the deployment, copy `terraform\terraform.tfvars.example` to `terraform\terraform.tfvars` and edit the credentials.
 
 Once done, you'll see the Wordpress URL in the console:
 ![# LB-URL](LB.jpg)

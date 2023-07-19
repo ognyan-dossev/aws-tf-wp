@@ -5,15 +5,9 @@ resource "aws_subnet" "database_private" {
   # map_public_ip_on_launch = "true"
 }
 
-# shouldn't need this, traffic should be routed via the nats
-# resource "aws_route_table_association" "igw_route_table_association_database" {
-#  subnet_id      = aws_subnet.database_private.id
-#  route_table_id = var.igw_route_table_id
-# }
-
 resource "aws_route_table_association" "nat_route_table_association_database_a" {
  subnet_id      = aws_subnet.database_private.id
- route_table_id = var.nat_route_table_a_id # !!!
+ route_table_id = var.nat_route_table_a_id
 }
 
 # resource "aws_route_table_association" "nat_route_table_association_database_b" {

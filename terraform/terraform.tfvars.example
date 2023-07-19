@@ -1,0 +1,4 @@
+db_user = dbadmin
+db_pass = MySecurePassword
+wp_user = wpadmin
+wp_pass = MySecurePassword2

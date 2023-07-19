@@ -31,10 +31,13 @@ wp_pass # Wordpress administration console password
 
 If you'd like to completely automate the deployment, copy terraform\terraform.tfvars.example to terraform\terraform.tfvars and edit the credentials.
 
+Once done, you'll see the Wordpress URL in the console:
+![# LB-URL](LB.jpg)
+
 ## Destroy Terraform Resources
 To destroy the Terraform resources, run the following command:
 
 ```bash
 make destroy
 ```
-The Makefile will initialize the Terraform configuration and destroy the resources accordingly.
+The Makefile will initialize the Terraform configuration and destroy the resources accordingly. Terraform may ask you to provide credentials again, just press Enter for each.
